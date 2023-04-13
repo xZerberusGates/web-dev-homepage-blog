@@ -443,11 +443,15 @@ input[type="email"] {
 	.card:hover .read-more-button {
 		display: none;
 	}
+
+	.card-description {
+		font-size: 0.9rem;
+	}
 	.read-more-button {
 		display: block;
 		width: 25%;
 		height: fit-content;
-
+		margin-block-start: 0.2rem;
 		/* align-items: center; */
 		/* align-items: flex-end; */
 		align-self: flex-start;
@@ -473,5 +477,17 @@ input[type="email"] {
 	.footer-bottom {
 		flex-flow: column wrap;
 		flex-basis: 100%;
+	}
+
+	.bottom-left,
+	.footer-center {
+		margin-block-end: 0.8rem;
+	}
+	.bottom-right {
+		margin-block-end: 0rem;
+	}
+
+	.footer-links {
+		margin-inline-end: 0.3rem;
 	}
 }
