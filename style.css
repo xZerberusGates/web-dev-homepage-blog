@@ -434,3 +434,44 @@ input[type="email"] {
 		background-position: 8vw;
 	}
 }
+
+@media (max-width: 758px) {
+	.card {
+		flex-basis: 100%;
+		margin-block-end: 1rem;
+	}
+	.card:hover .read-more-button {
+		display: none;
+	}
+	.read-more-button {
+		display: block;
+		width: 25%;
+		height: fit-content;
+
+		/* align-items: center; */
+		/* align-items: flex-end; */
+		align-self: flex-start;
+	}
+
+	.read-more-button:after {
+		content: "Read More";
+		width: 100%;
+		background-color: #0c027a;
+	}
+	.sign-up-newsletter {
+		width: 100%;
+	}
+
+	.form-container {
+		width: 75%;
+	}
+
+	.newsletter-top,
+	.newsletter-bottom {
+		width: 100%;
+	}
+	.footer-bottom {
+		flex-flow: column wrap;
+		flex-basis: 100%;
+	}
+}
